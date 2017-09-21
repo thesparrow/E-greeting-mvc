@@ -1,6 +1,19 @@
-﻿h1 {
+﻿.container {
+    background-color: orangered;
+}
+
+h1 {
     font-family: 'Abril Fatface', cursive;
 }
-.container {
-    background-color: orangered; 
+
+/*FOCUS form outline to black*/
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+
+#buttonSubmit:hover, #buttonSubmit:focus {
+    background-color: #000000;
+    color: #ff0000
 }
