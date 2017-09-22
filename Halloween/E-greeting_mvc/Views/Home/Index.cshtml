@@ -2,22 +2,23 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <img class="img-responsive" src="~/Content/Images/spookyTiger.jpg" alt="Lights" style="width:100%">
+        <img class="img-responsive" src="~/Content/Images/spookyTiger.jpg" alt="Main Image">
     </div>
 
     <h3>Select an image!</h3>
     <!--- SELECT AN IMAGE FOR E-CARD-->
+
     <div class="col-sm-2">
         <div class="thumbnail">
             <a href="images/lights.jpg">
-                <img src="~/Content/Images/monkeyPumpkin.jpg" alt="Lights" style="width: 100%">
+                <img src="~/Content/Images/monkeyPumpkin.jpg" alt="Greeting image">
             </a>
         </div>
     </div>
     <div class="col-sm-2">
         <div class="thumbnail">
             <a href="images/lights.jpg">
-                <img src="~/Content/Images/tigerPumpkin.jpg" alt="Lights" style="width: 100%">
+                <img src="~/Content/Images/tigerPumpkin.jpg" alt="Greeting image" >
             </a>
         </div>
     </div>
@@ -26,7 +27,7 @@
 
         <div class="thumbnail">
             <a href="images/lights.jpg">
-                <img src="~/Content/Images/monkeyPumpkin.jpg" alt="Lights" style="width: 100%">
+                <img src="~/Content/Images/monkeyPumpkin.jpg" alt="Greeting image">
             </a>
         </div>
     </div>
@@ -95,7 +96,13 @@
             </textarea><br>
 
         </div>
-
+        
+        <div class="col-sm-12">
+            @{
+                Html.RenderPartial("_reCAPTCHAform");   
+            }
+        </div>
+        
         <!--SUBMIT -->
         <div class="col-sm-12">
             <div class="form-group">
