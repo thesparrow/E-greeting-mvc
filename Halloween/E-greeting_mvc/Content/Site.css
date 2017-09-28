@@ -1,12 +1,20 @@
 ﻿body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Helvetica', sans-serif;
+    color: #333;
+    background: #fff;
 }
-
-
-.container {
-    background-color: #ff6347;
+a {
+    color: #ff6347;
 }
+    a:hover,
+    a:focus {
+        color: #ff6347;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
 
 body-content {
     background-color: #ff6347; /*orange*/
