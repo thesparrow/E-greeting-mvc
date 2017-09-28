@@ -8,22 +8,24 @@
     background-color: #ff6347;
 }
 
+body-content {
+    background-color: #ff6347; /*orange*/
+}
+
 h1 {
     font-family: 'Abril Fatface', cursive;
 }
 
 /*FOCUS form outline to black*/
 .form-control:focus {
-    border-color: #000000;
+    border-color: #000000; /*black*/
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
-
 #buttonSubmit:hover, #buttonSubmit:focus {
-    background-color: #000000;
+    background-color: #000000; /*black*/
     color: #ff6347
 }
-
 
 .img-responsive {
     width: 100%
