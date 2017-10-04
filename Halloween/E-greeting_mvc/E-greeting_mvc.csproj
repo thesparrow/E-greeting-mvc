@@ -151,10 +151,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\castelOfNoReturn.jpg" />
     <Content Include="Content\Images\monkeyPumpkin.jpg" />
+    <Content Include="Content\Images\spooky castle.jpg" />
+    <Content Include="Content\Images\spooky.jpg" />
     <Content Include="Content\Images\spookyTiger.jpg" />
     <Content Include="Content\Images\squirrelPumpkin.jpg" />
     <Content Include="Content\Images\tigerPumpkin.jpg" />
+    <Content Include="Content\Images\twoQueens.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -191,6 +195,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_reCAPTCHAform.cshtml" />
+    <Content Include="Views\Home\dark-theme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
