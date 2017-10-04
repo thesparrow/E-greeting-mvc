@@ -1,8 +1,125 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+<div class="row">
+    <div class="col-sm-6">
+        <img class="img-responsive img-rounded" src="~/Content/Images/spookyTiger.jpg" alt="Lights">
+    </div>
+
+    <h3>Select an image!</h3>
+    <!--- SELECT AN IMAGE FOR E-CARD-->
+
+    <div class="col-sm-2">
+        <div class="thumbnail">
+            <a href="images/lights.jpg">
+                <img src="~/Content/Images/monkeyPumpkin.jpg" class="img-rounded" alt="Lights">
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="thumbnail">
+            <a href="images/lights.jpg">
+                <img src="~/Content/Images/tigerPumpkin.jpg" class="img-rounded" alt="Lights">
+            </a>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+
+        <div class="thumbnail">
+            <a href="images/lights.jpg">
+                <img src="~/Content/Images/monkeyPumpkin.jpg" class="img-rounded" alt="Lights">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!--- BEGIN: CONSIDER THIS TO REPLACE LINE 3 to 34 ABOVE -->
+<div class="row">
+    <div class="col-sm-6">
+
+    </div>
+    <div class="col-sm-6">
+
+        <h3></h3>
+
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--- END: CONSIDER THIS TO REPLACE LINE 3 to 34 ABOVE -->
+
+<br />
+<div class="row">
+    <form>
+        <div class="col-sm-6">
+            <!-- SEND TO-->
+            <div class="form-group">
+                <input type="email" class="form-control" id="sendToEmail" placeholder="Send To" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" id="sendersEmail" placeholder="Sender's Email"
+                       pattern=""
+                       maxlength="255" required>
+            </div>
+        </div>
+
+        <!--SEND FROM-->
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" class="form-control" id="from" placeholder="From Name">
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" id="fromEmail" placeholder="From Email" required maxlength="255">
+            </div>
+        </div>
+
+        <!-- SUBJECT + MESSAGE COMPOSITION-->
+        <div class="col-sm-6">
+
+            <div class="form-group">
+                <input type="text" id="subject" class="form-control" id="subject" placeholder="Subject" maxlength="120">
+                <div class="countdown">
+                </div>
+            </div>
+
+            <textarea id="message" class="form-control" id="comments" name="comments" placeholder="Send your spooky greeting here!" rows="6" maxlength="630"></textarea>
+            <div class="countdown">
+            </div>
+            <br>
+
+        </div>
+
+        <div class="col-sm-12">
+            @Html.Partial("_reCAPTCHAform")
+        </div>
 
 
 
+
+        <!--SUBMIT -->
+        <div class="col-sm-12">
+            <div class="form-group">
+                <button class="btn btn-default pull-right" id="buttonSubmit" type="submit">Send</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
