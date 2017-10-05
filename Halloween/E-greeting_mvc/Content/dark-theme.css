@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background: url('Images/twoQueens.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: #000080;
+}
+
+    a:hover,
+    a:focus {
+        color: #808080;
+    }
+
+h1 {
+    -webkit-text-stroke: 2px rgba(0,0,0,0.4); /*Adding strokes*/
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.as-container {
+
+}
+
+.as-transparent-form {
+    background-color:rgba(0,0,0,0.4); /*spooky gray*/
+    padding:10px 10px;
+}
+
+.as-pull-right{
+    float: right;
+    width: 70%; 
+}
+
+
+.form-control:focus {
+    border-color: rgb(0,0,0);
+    box-shadow:none;
+    -webkit-box-shadow: none;
+}
+
+.has-error .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}

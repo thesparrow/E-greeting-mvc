@@ -1,36 +1,14 @@
 ﻿
+<link rel="stylesheet" href="~/Content/dark-theme.css">
 
-<div class="container">
+<div class="container container-fluid as-container">
 
     <div class="row">
+        
+        <form class="as-pull-right as-transparent-form">
 
-        <!--- BEGIN: CONSIDER THIS TO REPLACE LINE 3 to 34 ABOVE -->
-        <div class="row">
-            <div class="col-sm-6">
-
-            </div>
-            <div class="col-sm-6">
-
-                <h3></h3>
-
-                <div class="row">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="col-sm-4">
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <!--- END: CONSIDER THIS TO REPLACE LINE 3 to 34 ABOVE -->
-
-        <br />
-        <div class="row">
-            <form>
-                <div class="col-sm-6">
+            <div class="row">
+                <div class="col-lg-12 col-m-12 col-sm-12">
                     <!-- SEND TO-->
                     <div class="form-group">
                         <input type="email" class="form-control" id="sendToEmail" placeholder="Send To" required>
@@ -44,7 +22,7 @@
                 </div>
 
                 <!--SEND FROM-->
-                <div class="col-sm-6">
+                <div class="col-lg-12 col-m-12 col-sm-12">
                     <div class="form-group">
                         <input type="email" class="form-control" id="from" placeholder="From Name">
                     </div>
@@ -53,9 +31,12 @@
                         <input type="email" class="form-control" id="fromEmail" placeholder="From Email" required maxlength="255">
                     </div>
                 </div>
+            </div>
+            
 
-                <!-- SUBJECT + MESSAGE COMPOSITION-->
-                <div class="col-sm-6">
+            <!-- SUBJECT + MESSAGE COMPOSITION-->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
 
                     <div class="form-group">
                         <input type="email" class="form-control" id="subject" placeholder="Subject">
@@ -66,8 +47,10 @@
                     <br>
 
                 </div>
+            </div>
 
-                <div class="col-sm-12">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
                     @Html.Partial("_reCAPTCHAform")
                 </div>
 
@@ -80,10 +63,13 @@
                         <button class="btn btn-default pull-right" id="buttonSubmit" type="submit">Send</button>
                     </div>
                 </div>
+            </div>
+            
 
-            </form>
+        </form>
 
 
-        </div>
+
+
 
     </div>

@@ -151,6 +151,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dark-theme.css" />
     <Content Include="Content\Images\castelOfNoReturn.jpg" />
     <Content Include="Content\Images\monkeyPumpkin.jpg" />
     <Content Include="Content\Images\spooky castle.jpg" />
@@ -195,7 +196,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_reCAPTCHAform.cshtml" />
-    <Content Include="Views\Home\dark-theme.cshtml" />
+    <Content Include="Views\Home\Dark_theme.cshtml" />
+    <Content Include="Views\Home\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

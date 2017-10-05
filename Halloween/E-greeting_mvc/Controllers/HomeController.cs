@@ -49,5 +49,12 @@ namespace E_greeting_mvc.Controllers
 
             return View();
         }
+
+        public ActionResult Dark_theme()
+        {
+            ViewBag.Message = "Your dark theme.";
+
+            return View();
+        }
     }
 }
