@@ -1,13 +1,23 @@
 ﻿body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    background: url('Images/twoQueens.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    font-weight: 200;
+    color: #000;
+    /* Location of the image */
+    background-image: url('Images/twoQueens.jpg');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: top center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+     on the container's size */
     background-size: cover;
+    /* Set a background color that will be displayed
+     while the background image is loading */
+    background-color: rgb(200, 214, 223);
 }
 
 a {
@@ -19,34 +29,76 @@ a {
         color: #808080;
     }
 
-h1 {
-    -webkit-text-stroke: 2px rgba(0,0,0,0.4); /*Adding strokes*/
-    color: whitesmoke;
-    font-weight: 400;
-}
-
 .as-container {
 
 }
 
-.as-transparent-form {
+/*/footer {
+    color: #F5F5F5 !important;
+    background-color: rgba(35, 56, 63, .2);
+
+    background: #42A5F5;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+
+}*/
+
+footer {
+    position: absolute;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    height: 1em;
+    line-height: 1em;
+    color: #F5F5F5 !important;
+    background-color: rgba(35, 56, 63, .2);
+}
+
+h1 {
+    text-shadow: 0.1em 0.1em #23383F;
+    color: whitesmoke;
+}
+    .as-transparent-form {
     background-color:rgba(0,0,0,0.4); /*spooky gray*/
-    padding:10px 10px;
+    padding: 1em; /*use em as much as possible*/
+    position:relative;
+    top: 5em; 
 }
 
-.as-pull-right{
-    float: right;
-    width: 70%; 
-}
 
+.form-control {
+    color: #000;
+}
 
 .form-control:focus {
-    border-color: rgb(0,0,0);
-    box-shadow:none;
+    border-color: #23383F;
+    box-shadow: none;
     -webkit-box-shadow: none;
 }
+
+input::placeholder {
+    color: rgba(53,61,64, .4) !important;
+    font-size: 1.2em;
+}
+
+textarea::placeholder {
+    color: rgba(53,61,64, .4) !important;
+    font-size: 1.2em;
+} 
 
 .has-error .form-control:focus {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
+
+.btn {
+    background-color: #353D40; /*some form of gray*/
+    color: #F5F5F5; /*whitesmoke*/
+}
+
+    .btn:hover, .btn:focus {
+        background-color: whitesmoke; 
+        color: #353D40; 
+    }
+
